@@ -3,6 +3,8 @@ prompt
 
 修改默认的prompt
 
+依赖jquery
+
 PROMPT.init({
   	container:'',	//最外层的选择器
 	header:'',		//提示头
