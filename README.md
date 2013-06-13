@@ -4,7 +4,7 @@ prompt
 修改默认的prompt
 
 PROMPT.init({
-  container:'',	//最外层的选择器
+  	container:'',	//最外层的选择器
 	header:'',		//提示头
 	text:'',		//显示文本
 	yesButton:'',	//确定按钮显示文本
