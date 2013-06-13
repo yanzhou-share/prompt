@@ -1,0 +1,41 @@
+<html>
+<head>
+  <script type="text/javascript" src="./jquery.1.8.1.js"></script>
+	<script type="text/javascript" src="./prompt.js"></script>
+</head>
+<body>
+    <div class="modal-custom-common" id="container">
+		
+		<div class="modal-header">
+            <h3 id="header"></h3>
+        </div>         
+        <div class="modal-body-noScroll">
+            <p id="text"></p>
+			<div class="noteText"></div>
+        </div>
+        <div class="modal-footer">
+            <form class="form-inline" style="margin-top:20px; text-align:right;">                    
+                <a href="javascript:;" class="btn default-btn-width" id="yes"></a>
+                <a href="javascript:;" class="btn btn-primary default-btn-width" id="no"></a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/javascript">
+PROMPT.init({
+			container:'#container',
+			header:'提示111',
+			text:'你确定继续此操作吗？dgds',
+			yesButton:'确定',
+			noButton:'取消',
+			headerTarget:'#header',
+			textTarget:'#text',
+			yesTarget:'#yes',
+			noTarget:'#no',
+			yesButtonDisplay:true,
+			noButtonDisplay:true,
+			yesCallback:function(){console.log(3);},
+			noCallback:function(){console.log(5);}
+});
+</script>
